@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Sets the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive on different screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Google University Admission Portal</title>
+
+    <!-- Connects the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- 1. University Header -->
+    <header>
+        <h1 id="home">Google University</h1>
+        <p>Welcome to the Google University Admission Portal</p>
+    </header>
+
+    <!-- 2. Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#programmes">Programmes</a>
+        <a href="#eligibility">Eligibility</a>
+        <a href="#procedure">Admission Procedure</a>
+        <a href="#fees">Fee Structure</a>
+        <a href="#gallery">Campus Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- 3. Campus Image -->
+    <img id="campus-image"
+         src="Google University.png"
+         alt="Google University Campus">
+
+    <!-- 4. University Audio and Location -->
+    <section>
+        <h2>University Welcome Audio</h2>
+
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3"
+                    type="audio/mpeg">
+        </audio>
+
+        <h2>Explore Our University</h2>
+
+        <iframe
+            src="https://www.google.com/maps?q=Karunya%20University&output=embed"
+            title="Google Map showing Karunya University">
+        </iframe>
+    </section>
+
+    <!-- 5. Available Programmes -->
+    <section id="programmes">
+        <h2>Available Programmes</h2>
+
+        <h3>Undergraduate Programmes (UG)</h3>
+
+        <ol>
+            <li>B.Tech Computer Science (with any specialization)</li>
+            <li>B.Tech Information Technology</li>
+            <li>B.Tech Artificial Intelligence and Machine Learning</li>
+            <li>B.Tech Data Science</li>
+        </ol>
+
+        <h3>Postgraduate Programmes (PG)</h3>
+
+        <ol>
+            <li>M.Tech Computer Science</li>
+            <li>M.Tech Information Technology</li>
+            <li>M.Sc Data Science</li>
+        </ol>
+    </section>
+
+    <!-- 6. Eligibility Criteria -->
+    <section id="eligibility">
+        <h2>Eligibility Criteria</h2>
+
+        <h3>Undergraduate Admission (UG)</h3>
+
+        <ul>
+            <li>Students must complete 10+2 education.</li>
+            <li>Students must meet the required subject criteria.</li>
+            <li>Students must satisfy the minimum qualifying marks.</li>
+        </ul>
+
+        <h3>Postgraduate Admission (PG)</h3>
+
+        <ul>
+            <li>Students must have a relevant bachelor's degree.</li>
+            <li>Students must meet the university admission requirements.</li>
+        </ul>
+    </section>
+
+    <!-- 7. Admission Procedure -->
+    <section id="procedure">
+        <h2>Admission Procedure</h2>
+
+        <ol>
+            <li>Visit the university admission portal.</li>
+            <li>Select your preferred programme.</li>
+            <li>Fill out the application form.</li>
+            <li>Upload the required documents.</li>
+            <li>Pay the application fee.</li>
+            <li>Wait for admission confirmation.</li>
+        </ol>
+    </section>
+
+    <!-- 8. Fee Structure -->
+    <section id="fees">
+        <h2>Fee Structure</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Fee Structure (per semester)</th>
+                    <th>Course Duration</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>B.Tech Computer Science</td>
+                    <td>₹2,00,000</td>
+                    <td>4 years</td>
+                </tr>
+
+                <tr>
+                    <td>B.Tech Information Technology</td>
+                    <td>₹1,50,000</td>
+                    <td>4 years</td>
+                </tr>
+
+                <tr>
+                    <td>B.Tech Artificial Intelligence and Machine Learning</td>
+                    <td>₹2,50,000</td>
+                    <td>4 years</td>
+                </tr>
+
+                <tr>
+                    <td>B.Tech Data Science</td>
+                    <td>₹2,20,000</td>
+                    <td>4 years</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 9. CSS Positioning Examples -->
+    <section>
+        <h2>Admission Highlights</h2>
+
+        <!-- Static positioning example -->
+        <article>
+            <div class="static-box">
+                <strong>Admission Updates:</strong>
+                Applications are now open for the 2027 undergraduate programmes.
+            </div>
+        </article>
+
+        <!-- Relative positioning example -->
+        <div class="relative-box">
+            <strong>Featured Programme:</strong>
+            B.Tech Computer Science — Explore our computing and innovation programme.
+        </div>
+
+        <!-- Absolute positioning example -->
+        <div class="absolute-container">
+            <div class="programme-card">
+                <h3>B.Tech Computer Science</h3>
+                <p>Build skills in programming, software development, and computing.</p>
+
+                <span class="admission-badge">Admissions Open</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed Apply Now Button -->
+    <a href="application.html" class="fixed-box">Apply Now</a>
+
+    <!-- 10. Campus Gallery -->
+    <section id="gallery">
+        <h2>Campus Gallery</h2>
+
+        <div class="gallery">
+
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNemB1cAAHHxibRivWZ7TcDlv3wf6EUBoZJJRDBvvykw&s=10"
+                     alt="University library">
+                <figcaption>Central Library</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5_wrgMEwzBMmI4eJp__drDEE4ZmRmAhnWOYjW9BK5RA&s=10"
+                     alt="Computer laboratory">
+                <figcaption>Computer Laboratory</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSUuihaMLtstpJdRPyR_ZnxmRrLDtf3gWImjKhF9Kmrw&s=10"
+                     alt="University auditorium">
+                <figcaption>University Auditorium</figcaption>
+            </figure>
+
+        </div>
+    </section>
+
+    <!-- 11. University Video -->
+    <section>
+        <h2>University Video</h2>
+
+        <video autoplay muted loop playsinline>
+            <source src="University Video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- University Footer -->
+    <footer id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: admissions@googleuniversity.edu</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Address: Coimbatore, Tamil Nadu, India</p>
+
+        <p>
+            &copy; 2027 Google University.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
