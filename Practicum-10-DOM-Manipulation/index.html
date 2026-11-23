@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Sets the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive on different screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Google University Admission Portal</title>
+
+    <!-- Connects the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- 1. University Header -->
+    <header>
+        <h1 id="home">Google University</h1>
+        <p>Welcome to the Google University Admission Portal</p>
+    </header>
+
+    <!-- 2. Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#programme-management">Programme Suggestions</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Practicum 10: DOM Manipulation -->
+    <section id="programme-management">
+
+        <h2>Suggest a New Programme</h2>
+
+        <p>
+            Have an idea for a new programme?
+            Share your suggestion with Google University!
+        </p>
+
+        <!-- Input for entering a programme suggestion -->
+        <input
+            type="text"
+            id="programmeInput"
+            placeholder="Enter your programme suggestion"
+        >
+
+        <!-- Button to submit the suggestion -->
+        <button id="addButton" type="button">
+            Submit Suggestion
+        </button>
+
+        <!-- Displays the total number of suggestions -->
+        <p>
+            Total Suggestions: <span id="count">0</span>
+        </p>
+
+        <h3>Student Suggestions</h3>
+
+        <!-- Suggestions will be displayed here -->
+        <ul id="programmeList"></ul>
+
+    </section>
+
+    <!-- University Footer -->
+    <footer id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: admissions@googleuniversity.edu</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Address: Coimbatore, Tamil Nadu, India</p>
+
+        <p>
+            &copy; 2027 Google University.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- Connects the JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
