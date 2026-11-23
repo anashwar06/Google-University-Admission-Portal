@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Google University Admission Portal</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- University Header -->
+    <header>
+        <h1 id="home">Google University</h1>
+        <p>Welcome to the Google University Admission Portal</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#programmes">Programmes</a>
+        <a href="#eligibility">Eligibility</a>
+        <a href="application.html">Apply Now</a>
+        <a href="enquiry.html">Admission Enquiry</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Practicum 13: University Admission Task Manager -->
+    <section id="task-manager">
+
+        <h2>University Admission Task Manager</h2>
+
+        <p>
+            Organise and manage university admission activities
+            by creating, updating and tracking tasks.
+        </p>
+
+        <!-- Form to add or edit tasks -->
+        <form id="taskForm">
+
+            <!-- Task status -->
+            <label for="taskStatus">Task Status</label>
+            <select id="taskStatus" required>
+                <option value="Pending">Pending</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+
+            <h3>Add Admission Task</h3>
+
+            <!-- Task title -->
+            <label for="taskTitle">Task Title</label>
+            <input type="text" id="taskTitle"
+                   placeholder="Enter task title" required>
+
+            <!-- Task description -->
+            <label for="taskDescription">Task Description</label>
+            <textarea id="taskDescription"
+                      placeholder="Enter task details"
+                      required></textarea>
+
+            <!-- Task category -->
+            <label for="taskCategory">Task Category</label>
+            <select id="taskCategory" required>
+                <option value="">Select Category</option>
+                <option value="Application Review">Application Review</option>
+                <option value="Document Verification">Document Verification</option>
+                <option value="Interview Scheduling">Interview Scheduling</option>
+                <option value="Fee Verification">Fee Verification</option>
+                <option value="Student Enquiry">Student Enquiry</option>
+            </select>
+
+            <!-- Task due date -->
+            <label for="taskDueDate">Due Date</label>
+            <input type="date" id="taskDueDate" required>
+
+            <!-- Submit button -->
+            <button type="submit" id="taskSubmitButton">
+                Add Task
+            </button>
+
+        </form>
+
+        <!-- Task list -->
+        <div id="task-display">
+
+            <h3>Admission Tasks</h3>
+
+            <p id="taskMessage">No tasks added yet.</p>
+
+            <ul id="taskList"></ul>
+
+        </div>
+
+        <!-- Task status summary -->
+        <div id="task-summary">
+
+            <h3>Task Status Summary</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Total Tasks</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Pending</td>
+                        <td id="pendingCount">0</td>
+                    </tr>
+
+                    <tr>
+                        <td>In Progress</td>
+                        <td id="progressCount">0</td>
+                    </tr>
+
+                    <tr>
+                        <td>Completed</td>
+                        <td id="completedCount">0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- University Footer -->
+    <footer id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: admissions@googleuniversity.edu</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Address: Coimbatore, Tamil Nadu, India</p>
+
+        <p>
+            &copy; 2027 Google University.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- Connects the JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>

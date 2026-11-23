@@ -1,0 +1,342 @@
+
+/* =========================================
+   GOOGLE UNIVERSITY - PRACTICUM 13
+========================================= */
+
+/* Keeps element sizes predictable */
+* {
+    box-sizing: border-box;
+}
+
+/* Main webpage styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #3c4043;
+    margin: 0;
+    line-height: 1.7;
+    background: #dce5f0;
+}
+
+/* University Header */
+header {
+    text-align: center;
+    padding: 42px 15px 35px;
+    background: linear-gradient(
+        120deg,
+        #ffffff,
+        #f1f6ff,
+        #ffffff
+    );
+    border-bottom: 5px solid #4285F4;
+}
+
+header h1 {
+    color: #4285F4;
+    font-size: 38px;
+    margin: 0;
+}
+
+header p {
+    color: #5f6368;
+    margin: 8px 0 0;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 14px 20px;
+    background: linear-gradient(
+        110deg,
+        #174ea6,
+        #1a73e8,
+        #4285F4
+    );
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 7px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #1a73e8;
+    transform: translateY(-2px);
+}
+
+/* Main Content Section */
+section {
+    background-color: rgba(255, 255, 255, 0.97);
+    max-width: 1100px;
+    width: calc(100% - 40px);
+    margin: 35px auto;
+    padding: 35px;
+    border: 1px solid #dfe7f3;
+    border-radius: 16px;
+    box-shadow: 0 6px 22px rgba(60, 64, 67, 0.08);
+    transition: box-shadow 0.3s;
+}
+
+section:hover {
+    box-shadow: 0 9px 27px rgba(60, 64, 67, 0.12);
+}
+
+/* Headings and Text */
+h2 {
+    color: #1a73e8;
+    font-size: 27px;
+    margin: 0 0 22px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #e8f0fe;
+}
+
+h3 {
+    color: #188038;
+    margin-top: 22px;
+}
+
+p {
+    line-height: 1.7;
+    margin: 12px 0;
+}
+
+/* General Buttons */
+button {
+    background-color: #1a73e8;
+    color: #ffffff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition:
+        background-color 0.3s,
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #174ea6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(26, 115, 232, 0.2);
+}
+
+/* General Form Elements */
+input,
+select,
+textarea {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    max-width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background-color: #ffffff;
+    color: #3c4043;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #4285F4;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.12);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,
+td {
+    border: 1px solid #e0e5ed;
+    padding: 14px;
+    text-align: left;
+}
+
+th {
+    background-color: #1a73e8;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f8ff;
+}
+
+tr:hover {
+    background-color: #e8f0fe;
+}
+
+/* =========================================
+   PRACTICUM 13: UNIVERSITY TASK MANAGER
+========================================= */
+
+/* Task form layout */
+#taskForm {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Task form fields */
+#taskForm input,
+#taskForm select,
+#taskForm textarea {
+    width: 100%;
+}
+
+/* Task list */
+#taskList {
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+}
+
+/* Individual task cards */
+#taskList li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    padding: 18px;
+    margin: 14px 0;
+
+    background-color: #f8faff;
+    border: 1px solid #dfe7f3;
+    border-left: 5px solid #4285F4;
+    border-radius: 9px;
+}
+
+/* Task buttons */
+#taskList li button {
+    padding: 8px 13px;
+    font-size: 13px;
+}
+
+/* Delete button */
+#taskList li button:last-child {
+    background-color: #EA4335;
+}
+
+#taskList li button:last-child:hover {
+    background-color: #c5221f;
+}
+
+/* Task status message */
+#taskMessage {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    background: linear-gradient(
+        120deg,
+        #ffffff,
+        #f1f6ff,
+        #ffffff
+    );
+    color: #5f6368;
+    text-align: center;
+    padding: 38px 20px;
+    margin-top: 50px;
+    border-top: 5px solid #4285F4;
+}
+
+footer h2 {
+    color: #1a73e8;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+footer p {
+    color: #5f6368;
+    margin: 8px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    section {
+        width: calc(100% - 30px);
+        margin: 22px auto;
+        padding: 22px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 28px 12px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 3px;
+        padding: 10px 5px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    section {
+        width: calc(100% - 20px);
+        margin: 17px auto;
+        padding: 17px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+    footer {
+        padding: 25px 12px;
+    }
+}
