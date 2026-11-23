@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Sets the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive on different screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Google University Admission Portal</title>
+
+    <!-- Connects the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- University Header -->
+    <header>
+        <h1 id="home">Google University</h1>
+        <p>Welcome to the Google University Admission Portal</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#notification-settings">Notification Settings</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Practicum 15: Custom Toggle Switch -->
+    <section id="notification-settings">
+
+        <h2>Admission Notification Settings</h2>
+
+        <p>
+            Manage your admission application notifications.
+            Turn on notifications to receive application updates.
+        </p>
+
+        <!-- Toggle switch container -->
+        <div id="toggle-container">
+
+            <label for="notificationToggle">
+
+                <!-- Checkbox controls the toggle switch -->
+                <input
+                    type="checkbox"
+                    id="notificationToggle"
+                >
+
+                <!-- Custom toggle switch design -->
+                <span id="toggleSlider"></span>
+
+                <span>Enable Admission Notifications</span>
+
+            </label>
+
+        </div>
+
+        <!-- Displays the current notification setting -->
+        <p id="notificationStatus">
+            Notifications are currently disabled.
+        </p>
+
+    </section>
+
+    <!-- University Footer -->
+    <footer id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: admissions@googleuniversity.edu</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Address: Coimbatore, Tamil Nadu, India</p>
+
+        <p>
+            &copy; 2027 Google University.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- Connects the JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>

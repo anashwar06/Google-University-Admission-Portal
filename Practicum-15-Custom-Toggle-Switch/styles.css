@@ -1,0 +1,259 @@
+
+/* =========================================
+   GOOGLE UNIVERSITY - PRACTICUM 15
+   CUSTOM TOGGLE SWITCH
+========================================= */
+
+/* Keeps element sizes predictable */
+* {
+    box-sizing: border-box;
+}
+
+/* Main webpage styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #3c4043;
+    margin: 0;
+    line-height: 1.7;
+    background: #dce5f0;
+}
+
+/* University Header */
+header {
+    text-align: center;
+    padding: 42px 15px 35px;
+    background: linear-gradient(
+        120deg,
+        #ffffff,
+        #f1f6ff,
+        #ffffff
+    );
+
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(
+        to right,
+        #4285F4 25%,
+        #EA4335 25% 50%,
+        #FBBC05 50% 75%,
+        #34A853 75%
+    ) 1;
+}
+
+header h1 {
+    color: #4285F4;
+    font-size: 38px;
+    margin: 0;
+}
+
+header p {
+    color: #5f6368;
+    margin: 8px 0 0;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 14px 20px;
+    background: linear-gradient(
+        110deg,
+        #174ea6,
+        #1a73e8,
+        #4285F4
+    );
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 16px;
+    border-radius: 7px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #1a73e8;
+    transform: translateY(-2px);
+}
+
+/* Main Content Section */
+section {
+    background-color: rgba(255, 255, 255, 0.97);
+    max-width: 1100px;
+    width: calc(100% - 40px);
+    margin: 35px auto;
+    padding: 35px;
+    border: 1px solid #dfe7f3;
+    border-radius: 16px;
+    box-shadow: 0 6px 22px rgba(60, 64, 67, 0.08);
+    transition: box-shadow 0.3s;
+}
+
+section:hover {
+    box-shadow: 0 9px 27px rgba(60, 64, 67, 0.12);
+}
+
+h2 {
+    color: #1a73e8;
+    font-size: 27px;
+    margin: 0 0 22px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #e8f0fe;
+}
+
+/* =========================================
+   PRACTICUM 15: CUSTOM TOGGLE SWITCH
+========================================= */
+
+/* Toggle container */
+#toggle-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Toggle label */
+#toggle-container label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+/* Hide the default checkbox appearance */
+#notificationToggle {
+    appearance: none;
+    position: absolute;
+}
+
+/* Toggle background */
+#toggleSlider {
+    position: relative;
+    width: 55px;
+    height: 28px;
+    background: #9aa0a6;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+}
+
+/* Circular toggle button */
+#toggleSlider::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 3px;
+    top: 3px;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Toggle background when enabled */
+#notificationToggle:checked + #toggleSlider {
+    background: #34A853;
+}
+
+/* Move the circular button when enabled */
+#notificationToggle:checked + #toggleSlider::before {
+    transform: translateX(27px);
+}
+
+/* University Footer */
+footer {
+    position: relative;
+    background: linear-gradient(
+        120deg,
+        #ffffff,
+        #f1f6ff,
+        #ffffff
+    );
+
+    color: #5f6368;
+    text-align: center;
+    padding: 38px 20px;
+    margin-top: 50px;
+    border-top: 5px solid transparent;
+    border-image: linear-gradient(
+        to right,
+        #4285F4 25%,
+        #EA4335 25% 50%,
+        #FBBC05 50% 75%,
+        #34A853 75%
+    ) 1;
+}
+
+footer h2 {
+    color: #1a73e8;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+footer p {
+    color: #5f6368;
+    margin: 8px 0;
+}
+
+footer p:last-child {
+    border-top: 1px solid #e0e5ed;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    section {
+        width: calc(100% - 30px);
+        margin: 22px auto;
+        padding: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 28px 12px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 3px;
+        padding: 10px 5px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    section {
+        width: calc(100% - 20px);
+        margin: 17px auto;
+        padding: 17px;
+        border-radius: 12px;
+    }
+}
