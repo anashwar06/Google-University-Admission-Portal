@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Sets the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Google University Admission Portal</title>
+
+    <!-- Connects the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- University Header -->
+    <header>
+        <h1 id="home">Google University</h1>
+        <p>Welcome to the Google University Admission Portal</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#api-management">Learning Resources</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Practicum 12: API Data Management -->
+    <section id="api-management">
+
+        <h2>Technology Learning Resources</h2>
+
+        <p>
+            Explore coding tutorials, programming resources
+            and learning materials for students.
+        </p>
+
+        <!-- Button to retrieve coding resources -->
+        <button id="fetchButton" type="button">
+            Explore Learning Resources
+        </button>
+
+        <!-- Displays loading, success or error messages -->
+        <p id="apiStatus">
+            Click the button to explore coding resources.
+        </p>
+
+        <!-- Table to display API information -->
+        <div class="table-container">
+
+            <table id="apiTable">
+
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Topics</th>
+                        <th>Resource Type</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+
+                <tbody id="apiTableBody">
+                    <!-- API data will appear here -->
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- University Footer -->
+    <footer id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: admissions@googleuniversity.edu</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Address: Coimbatore, Tamil Nadu, India</p>
+
+        <p>
+            &copy; 2027 Google University.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- Connects the JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>

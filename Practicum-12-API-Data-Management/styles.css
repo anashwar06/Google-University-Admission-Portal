@@ -1,0 +1,255 @@
+
+/* ==========================================
+   GOOGLE UNIVERSITY - API DATA MANAGEMENT
+========================================== */
+
+/* Keeps element sizes predictable */
+* {
+    box-sizing: border-box;
+}
+
+/* Main webpage styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #3c4043;
+    margin: 0;
+    line-height: 1.7;
+    background-color: #dce5f0;
+}
+
+/* University Header */
+header {
+    text-align: center;
+    padding: 42px 15px 35px;
+    background: linear-gradient(
+        120deg,
+        #ffffff,
+        #f1f6ff,
+        #ffffff
+    );
+    border-bottom: 5px solid #4285F4;
+}
+
+header h1 {
+    color: #4285F4;
+    font-size: 38px;
+    margin: 0;
+}
+
+header p {
+    color: #5f6368;
+    margin: 8px 0 0;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 14px 20px;
+    background: linear-gradient(
+        110deg,
+        #174ea6,
+        #1a73e8,
+        #4285F4
+    );
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 7px;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #1a73e8;
+}
+
+/* Main Content Section */
+section {
+    background-color: #ffffff;
+    max-width: 1100px;
+    width: calc(100% - 40px);
+    margin: 35px auto;
+    padding: 35px;
+    border: 1px solid #dfe7f3;
+    border-radius: 16px;
+    box-shadow: 0 6px 22px rgba(60, 64, 67, 0.08);
+}
+
+/* Section Heading */
+h2 {
+    color: #1a73e8;
+    font-size: 27px;
+    margin: 0 0 22px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #e8f0fe;
+}
+
+/* Paragraph Styling */
+p {
+    line-height: 1.7;
+    margin: 12px 0;
+}
+
+/* Practicum 12: API Data Management */
+
+/* API section layout */
+#api-management {
+    display: grid;
+    gap: 15px;
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 1100px;
+    border: 1px solid #dfe7f3;
+    border-radius: 12px;
+}
+
+/* API fetch button */
+#fetchButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #1a73e8;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#fetchButton:hover {
+    background-color: #174ea6;
+}
+
+/* Disabled button while loading */
+#fetchButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* API loading and status message */
+#apiStatus {
+    margin: 15px 0;
+    padding: 10px;
+}
+
+/* Scrollable table container */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* API data table */
+#apiTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#apiTable th,
+#apiTable td {
+    border: 1px solid #dddddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#apiTable th {
+    background-color: #1a73e8;
+    color: #ffffff;
+}
+
+#apiTable tr:nth-child(even) {
+    background-color: #f5f8ff;
+}
+
+#apiTable a {
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+/* University Footer */
+footer {
+    text-align: center;
+    padding: 35px 15px;
+    background-color: #174ea6;
+    color: #ffffff;
+}
+
+footer h2 {
+    color: #ffffff;
+    border: none;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    section {
+        width: calc(100% - 30px);
+        margin: 22px auto;
+        padding: 22px;
+    }
+
+    #apiTable {
+        font-size: 14px;
+    }
+
+    #apiTable th,
+    #apiTable td {
+        padding: 9px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 28px 12px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 3px;
+        padding: 10px 5px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    section {
+        width: calc(100% - 20px);
+        margin: 17px auto;
+        padding: 17px;
+    }
+
+    #apiTable {
+        font-size: 12px;
+    }
+
+    #apiTable th,
+    #apiTable td {
+        padding: 7px;
+    }
+
+    footer {
+        padding: 25px 12px;
+    }
+}
