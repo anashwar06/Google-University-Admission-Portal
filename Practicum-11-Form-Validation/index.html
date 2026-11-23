@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Google University - Admission Enquiry</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- University Header -->
+    <header>
+        <h1>Google University</h1>
+        <p>Admission Enquiry Portal</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#enquiryForm">Admission Enquiry</a>
+    </nav>
+
+    <!-- Admission Enquiry Form -->
+    <section id="enquiry-section">
+
+        <h2>University Admission Enquiry</h2>
+
+        <p>Enter your details to enquire about admission.</p>
+
+        <form id="enquiryForm" novalidate>
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="studentName">Full Name:</label>
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter your full name"
+                    minlength="3"
+                    maxlength="40"
+                    pattern="[A-Za-z ]+"
+                    required
+                >
+
+                <label for="studentEmail">Email Address:</label>
+                <input
+                    type="email"
+                    id="studentEmail"
+                    placeholder="example@email.com"
+                    required
+                >
+
+                <label for="studentAge">Age:</label>
+                <input
+                    type="number"
+                    id="studentAge"
+                    min="16"
+                    max="35"
+                    placeholder="Enter your age"
+                    required
+                >
+
+            </fieldset>
+
+            <!-- Programme Details -->
+            <fieldset>
+                <legend>Programme Details</legend>
+
+                <label for="programme">Select Programme:</label>
+                <select id="programme" required>
+                    <option value="">-- Select a Programme --</option>
+                    <option value="Computer Science">B.Tech Computer Science</option>
+                    <option value="Information Technology">B.Tech Information Technology</option>
+                    <option value="Artificial Intelligence">B.Tech Artificial Intelligence</option>
+                    <option value="Electronics">B.Tech Electronics and Communication</option>
+                </select>
+
+                <label for="message">Your Enquiry:</label>
+                <textarea
+                    id="message"
+                    placeholder="Write your enquiry here"
+                    minlength="10"
+                    maxlength="300"
+                    required
+                ></textarea>
+
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Enquiry</button>
+
+            <!-- Displays validation and success messages -->
+            <p id="formMessage" role="status"></p>
+
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Email: admissions@googleuniversity.edu</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Address: Coimbatore, Tamil Nadu, India</p>
+        <p>&copy; 2027 Google University. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+
+/* ==========================================
+   GOOGLE UNIVERSITY - PRACTICUM 11
+   FORM VALIDATION
+========================================== */
+
+/* General webpage styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #3c4043;
+    margin: 0;
+    line-height: 1.7;
+    background: #dce5f0;
+}
+
+/* University Header */
+header {
+    text-align: center;
+    padding: 42px 15px 35px;
+    background: linear-gradient(120deg, #ffffff, #f1f6ff, #ffffff);
+    border-bottom: 5px solid #4285F4;
+}
+
+header h1 {
+    color: #4285F4;
+    font-size: 38px;
+    margin: 0;
+}
+
+header p {
+    color: #5f6368;
+    margin: 8px 0 0;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 20px;
+    background: linear-gradient(110deg, #174ea6, #1a73e8, #4285F4);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 7px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #1a73e8;
+}
+
+/* Enquiry Section */
+#enquiry-section {
+    max-width: 800px;
+    width: calc(100% - 40px);
+    margin: 35px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #dfe7f3;
+    border-radius: 14px;
+    box-shadow: 0 6px 22px rgba(60, 64, 67, 0.08);
+}
+
+h2 {
+    color: #1a73e8;
+    border-bottom: 3px solid #e8f0fe;
+    padding-bottom: 12px;
+}
+
+/* Form Fieldsets */
+fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+legend {
+    color: #188038;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 6px;
+}
+
+/* Form Inputs */
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background-color: white;
+    color: #3c4043;
+}
+
+/* Focus Effect */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #4285F4;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.12);
+}
+
+/* Invalid Input */
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: #EA4335;
+}
+
+/* Valid Input */
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: #34A853;
+}
+
+/* Submit Button */
+button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #174ea6;
+}
+
+/* Validation Message */
+#formMessage {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 38px 20px;
+    margin-top: 50px;
+    background: linear-gradient(120deg, #ffffff, #f1f6ff, #ffffff);
+    color: #5f6368;
+    border-top: 5px solid #4285F4;
+}
+
+footer h2 {
+    color: #1a73e8;
+    border: none;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    #enquiry-section {
+        width: calc(100% - 20px);
+        padding: 18px;
+    }
+
+    fieldset {
+        padding: 12px;
+    }
+}
