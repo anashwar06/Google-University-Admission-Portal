@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Sets the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive on different screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Google University Admission Portal</title>
+
+    <!-- Connects the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- University Header -->
+    <header>
+        <h1 id="home">Google University</h1>
+        <p>Welcome to the Google University Admission Portal</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#programme-finder">Programmes</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Practicum 14: Interactive Programme Finder -->
+    <section id="programme-finder">
+
+        <h2>Find Your Programme</h2>
+
+        <p>
+            Search and explore undergraduate and postgraduate
+            programmes offered by Google University.
+        </p>
+
+        <!-- Search and filter controls -->
+        <div id="programme-controls">
+
+            <!-- Search programmes by name -->
+            <input
+                type="text"
+                id="programmeSearch"
+                placeholder="Search for a programme..."
+            >
+
+            <!-- Filter programmes by level -->
+            <select id="programmeFilter">
+
+                <option value="All">All Programmes</option>
+                <option value="UG">Undergraduate (UG)</option>
+                <option value="PG">Postgraduate (PG)</option>
+
+            </select>
+
+            <!-- Clear search and filters -->
+            <button type="button" id="clearProgrammeSearch">
+                Clear Filters
+            </button>
+
+        </div>
+
+        <!-- Programme results -->
+        <div id="programme-results">
+
+            <ul id="interactiveProgrammeList">
+
+                <!-- Undergraduate Programme 1 -->
+                <li class="programme-item" data-level="UG">
+
+                    <img
+                        src="B.Tech Computer Science.png"
+                        alt="Computer science and technology"
+                    >
+
+                    <h3>B.Tech Computer Science</h3>
+
+                    <p>Undergraduate Programme</p>
+
+                    <details>
+                        <summary>View Programme Details</summary>
+                        <p>
+                            Learn programming, software development,
+                            algorithms and computer technologies.
+                        </p>
+                    </details>
+
+                    <button type="button" class="selectProgramme">
+                        Select Programme
+                    </button>
+
+                </li>
+
+                <!-- Undergraduate Programme 2 -->
+                <li class="programme-item" data-level="UG">
+
+                    <img
+                        src="B.Tech Information Technology.png"
+                        alt="Information technology and teamwork"
+                    >
+
+                    <h3>B.Tech Information Technology</h3>
+
+                    <p>Undergraduate Programme</p>
+
+                    <details>
+                        <summary>View Programme Details</summary>
+                        <p>
+                            Explore networking, databases,
+                            web technologies and information systems.
+                        </p>
+                    </details>
+
+                    <button type="button" class="selectProgramme">
+                        Select Programme
+                    </button>
+
+                </li>
+
+                <!-- Undergraduate Programme 3 -->
+                <li class="programme-item" data-level="UG">
+
+                    <img
+                        src="B.Tech Artificial Intelligence and Machine Learning.png"
+                        alt="Artificial intelligence technology"
+                    >
+
+                    <h3>B.Tech Artificial Intelligence and Machine Learning</h3>
+
+                    <p>Undergraduate Programme</p>
+
+                    <details>
+                        <summary>View Programme Details</summary>
+                        <p>
+                            Study artificial intelligence,
+                            machine learning and intelligent systems.
+                        </p>
+                    </details>
+
+                    <button type="button" class="selectProgramme">
+                        Select Programme
+                    </button>
+
+                </li>
+
+                <!-- Undergraduate Programme 4 -->
+                <li class="programme-item" data-level="UG">
+
+                    <img
+                        src="B.Tech Data Science.png"
+                        alt="Data science and analytics"
+                    >
+
+                    <h3>B.Tech Data Science</h3>
+
+                    <p>Undergraduate Programme</p>
+
+                    <details>
+                        <summary>View Programme Details</summary>
+                        <p>
+                            Learn data analysis, statistics,
+                            visualisation and data-driven decision making.
+                        </p>
+                    </details>
+
+                    <button type="button" class="selectProgramme">
+                        Select Programme
+                    </button>
+
+                </li>
+
+                <!-- Postgraduate Programme 1 -->
+                <li class="programme-item" data-level="PG">
+
+                    <img
+                        src="M.Tech Computer Science.png"
+                        alt="Advanced computer science studies"
+                    >
+
+                    <h3>M.Tech Computer Science</h3>
+
+                    <p>Postgraduate Programme</p>
+
+                    <details>
+                        <summary>View Programme Details</summary>
+                        <p>
+                            Develop advanced knowledge in computing,
+                            research and software technologies.
+                        </p>
+                    </details>
+
+                    <button type="button" class="selectProgramme">
+                        Select Programme
+                    </button>
+
+                </li>
+
+                <!-- Postgraduate Programme 2 -->
+                <li class="programme-item" data-level="PG">
+
+                    <img
+                        src="M.Tech Information Technology.png"
+                        alt="Advanced information technology studies"
+                    >
+
+                    <h3>M.Tech Information Technology</h3>
+
+                    <p>Postgraduate Programme</p>
+
+                    <details>
+                        <summary>View Programme Details</summary>
+                        <p>
+                            Explore advanced information systems,
+                            networks and technology management.
+                        </p>
+                    </details>
+
+                    <button type="button" class="selectProgramme">
+                        Select Programme
+                    </button>
+
+                </li>
+
+                <!-- Postgraduate Programme 3 -->
+                <li class="programme-item" data-level="PG">
+
+                    <img
+                        src="M.Sc Data Science.png"
+                        alt="Advanced data science studies"
+                    >
+
+                    <h3>M.Sc Data Science</h3>
+
+                    <p>Postgraduate Programme</p>
+
+                    <details>
+                        <summary>View Programme Details</summary>
+                        <p>
+                            Gain advanced skills in data science,
+                            statistical modelling and analytics.
+                        </p>
+                    </details>
+
+                    <button type="button" class="selectProgramme">
+                        Select Programme
+                    </button>
+
+                </li>
+
+            </ul>
+
+            <!-- Message when no programmes match -->
+            <p id="noProgrammeMessage" hidden>
+                No matching programmes found.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- University Footer -->
+    <footer id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: admissions@googleuniversity.edu</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Address: Coimbatore, Tamil Nadu, India</p>
+
+        <p>
+            &copy; 2027 Google University.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- Connects the JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
